@@ -1,0 +1,71 @@
+.HeroSection{
+    width: 90vw;
+    height: 60vh;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer{
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    width: 50vw;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color:#94765d44;
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   align-items: center;
+
+}
+
+.innerContainer h1{
+color:#69411e;
+font-size: 36px;
+padding: 10px;
+border-radius: 10px;
+}
+
+.innerContainer h1 span{
+    color: #171001be;
+}
+
+.innerContainer p{
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    opacity: 0.9;
+    margin-top: -20px;
+}
+
+.Search{
+    display: flex;
+    gap: 10px;
+    width: 20vw;
+
+}
+
+.searchbar{
+    background-color: #69411ee0;
+    border-radius: 10px;
+    display: flex;  
+}
+.searchbar input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.Search button{
+    background-color:#a08463;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
