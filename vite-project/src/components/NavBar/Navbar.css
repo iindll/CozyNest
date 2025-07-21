@@ -1,0 +1,53 @@
+
+.navbar{
+
+    width: 90vw;
+    background-color: #efece6;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+        box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+ 
+}
+
+.nav-links{
+    display: flex
+;
+    gap: 20px;
+    margin-right: 60px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.nav-links p {
+    padding: 8px;
+    border-radius: 10px;
+
+   
+}
+.nav-links p:hover{
+font-size: 15px;
+background-color: #c4b3a0
+
+}
+
+.logo{
+margin-left: 60px;
+font-size:20px ;
+text-align: center;
+font-family: 'Libre Baskerville', serif;
+font-weight: bold;
+}
+.logo p{
+font-size: 25px;    
+}
+
+.logo span{
+    font-size: 30px;
+    color: #332a0e9c;
+    font-family: 'Libre Baskerville', serif;
+
+}
