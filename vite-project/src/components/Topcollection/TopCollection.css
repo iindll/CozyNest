@@ -1,0 +1,91 @@
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.container .text-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.container .text-section h1{
+ font-size: 50px;
+ margin-bottom:-10px ;
+}
+.container .text-section p{
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.container .items{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 60px;
+
+
+}
+
+.container .items .item{
+    border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: px;
+    object-fit: cover; /* this makes sure it fills the space and looks neat */
+background-color:#a08669;
+padding:  0 ;
+cursor: pointer;
+
+}
+.container .items .item:hover{
+transform: scale(1.1);
+transition: 1s;
+}
+.container .items .item img{
+    border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+ width: 100%;
+  height: 250px; /* or any height you like */
+
+}
+
+.container .items .item p {
+    color: white;
+font-family: 'Poppins', sans-serif;
+text-align: start;
+padding-left: 10px;
+
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+  padding: 5px 10px;
+  border-radius: 5px;
+ font-family: 'Libre Baskerville', serif; font-size: 16px;
+}
+
+
