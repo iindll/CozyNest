@@ -1,0 +1,57 @@
+.FeaturedCategories{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.category{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+
+.FeaturedCategories h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    margin-bottom:-10px ;
+
+}
+
+.FeaturedCategories p{
+      font-family: 'Playfair Display', serif;
+      opacity: 0.8;
+
+}
+
+
+.category-card{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    object-fit: cover;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color:#322817;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+  
+}
+
+.category-card img{
+        object-fit: cover;
+border-radius: 50%;
+height: 100px;
+width: 100px;
+cursor: pointer;
+}

@@ -21,6 +21,7 @@ height: 100%;
 .container .text-section p{
     font-size: 15px;
     opacity: 0.6;
+    margin-bottom: 40px;
 }
 
 .container .items{

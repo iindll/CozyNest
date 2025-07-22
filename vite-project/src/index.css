@@ -8,6 +8,12 @@ background-color: rgba(139, 69, 19, 0.207);
 height: 100%;
 width: 100%;
 }
+.container2{
+    margin-top: 40px;
+background-color: rgba(149, 105, 52, 0.371);
+height: 100%;
+width: 100%;
+}
 body{
     margin: 0;
 }
