@@ -1,8 +1,8 @@
 import { useState , useEffect} from "react"
 import "./HeroSection.css"
-import image1 from "../../assets/HeroSection1.jpeg"
-import image2 from "../../assets/HeroSection2.jpeg"
-import image3 from "../../assets/Herosection3.jpeg"
+import image1 from "../../assets/HeroSection1.jpg"
+import image2 from "../../assets/Herosection5.jpg"
+import image3 from "../../assets/HeroSection4.jpg"
 import serachBar from "../../assets/Search.svg"
 const HeroSection = () => {
       const backgroundImages = [image1, image2, image3];
@@ -39,6 +39,9 @@ const HeroSection = () => {
         <button>Search</button>    
         </div>
         </div>
+        <div className="register">
+        <button className=" button Login">Login</button>
+        <button className="button SignUp">Signup</button></div>
         </div>
     
   )

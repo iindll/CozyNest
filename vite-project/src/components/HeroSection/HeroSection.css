@@ -84,4 +84,24 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  color: var(--dark-text);
+
+}
+.register{
+  display: flex;
+  gap: 10px;
+}
+.button{
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  background-color: var(--primary-brown);
+color:#e1cab2; 
+ border-radius: 10PX;
+}
+
+.button:hover{
+  background-color: #311a06;
+
 }
