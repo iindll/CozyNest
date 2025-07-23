@@ -9,7 +9,7 @@ const App = () => {
   return (
     
     <div className='conainer'>
-     <NavBar/> 
+    <Navbar/>
      <Cart/>
      {/* <Navbar/>
      <HeroSection/>
@@ -19,8 +19,6 @@ const App = () => {
     <Categories/>
      </div>
      <Byroom/> */}
-     
-
     </div>
   )
 }
