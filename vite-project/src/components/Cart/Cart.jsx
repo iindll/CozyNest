@@ -59,7 +59,28 @@ const Cart = () => {
         </div>
 
         <div className="second-section">
-          {}
+          <div className="continer">
+            <h3>Order Summry</h3>
+            <div className="order-info">
+              <div className="items info">
+                <p className="c1">items</p>
+                <p className="c2">9</p>
+              </div>
+              <div className="sub-total info">
+                <p className="c1">Sub Total</p>
+                <p className="c2">3000</p></div>
+              <div className="Shiping info">
+                <p className="c1">Taxes</p>
+                <p className="c2">0000</p>
+              </div>
+          
+            </div>
+            <div className="Total">
+              <p className="c1">Total</p>
+                <p className="c2">5430</p>
+            </div>
+          </div>
+          <button>Proceed to Checkout</button>
         </div>
       </div>
     </div>
