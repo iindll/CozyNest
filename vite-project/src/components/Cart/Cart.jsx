@@ -46,11 +46,16 @@ const Cart = () => {
                   <img src={item.img} alt={item.name} />
                   <p className="price">{item.price} EGP</p>
                   <div className="quantity-counter">
-                    <span className=" minuse">-</span>
+                    <div className=" minuse">
+                      <p className="span-minuse">-</p>
+                    </div>
                     <span>{item.quantity}</span>
-                    <span className="  pluse">+</span>
+                    <div className=" pluse">
+                      <p className="span-pluse">+</p>
+                    </div>
                   </div>
                    <span className="total">{item.total}</span>
+                   <button className="DeleteItem">Delete</button>
 
                 </div>
               ))
@@ -62,20 +67,20 @@ const Cart = () => {
           <div className="continer">
             <h3>Order Summry</h3>
             <div className="order-info">
-              <div className="items info">
+              <div className="items information">
                 <p className="c1">items</p>
                 <p className="c2">9</p>
               </div>
-              <div className="sub-total info">
+              <div className="sub-total information">
                 <p className="c1">Sub Total</p>
                 <p className="c2">3000</p></div>
-              <div className="Shiping info">
+              <div className="Shiping information">
                 <p className="c1">Taxes</p>
                 <p className="c2">0000</p>
               </div>
           
             </div>
-            <div className="Total">
+            <div className="Total information">
               <p className="c1">Total</p>
                 <p className="c2">5430</p>
             </div>
