@@ -9,6 +9,22 @@ const cart = [
     total: 0,
     img: img1,
   },
+   {
+    id: 1,
+    name: "Chair",
+    quantity: 0,
+    price: 100,
+    total: 0,
+    img: img1,
+  },
+   {
+    id: 1,
+    name: "Chair",
+    quantity: 0,
+    price: 100,
+    total: 0,
+    img: img1,
+  },
   {
     id: 2,
     name: "Chair",

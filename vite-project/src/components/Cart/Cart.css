@@ -71,6 +71,8 @@ font-family: 'Roboto', sans-serif;
 display: flex;
 flex-direction: column;
 gap: 10px;
+ overflow-y: scroll;
+height: 70vh;
 
 
 }
@@ -130,8 +132,8 @@ gap: 10px;
 .quantity-counter span{
     border: 1px solid rgb(44, 32, 32);;
     width: 15px;
-    height: 25px;
-    text-align: center;
+    height: 23px;    text-align: center;
+
     
 
 }
@@ -171,3 +173,25 @@ display: grid;
 }
 
 
+/* حجم الشريط */
+.cart-items::-webkit-scrollbar {
+  width: 5px; /* العرض */
+}
+
+/* خلفية المسار */
+.cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* مقبض السحب */
+.cart-items::-webkit-scrollbar-thumb {
+  background: #2c2020;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* عند المرور بالماوس */
+.cart-items::-webkit-scrollbar-thumb:hover {
+  background: #4a3a3a;
+}
