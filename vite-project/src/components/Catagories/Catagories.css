@@ -54,4 +54,16 @@ border-radius: 50%;
 height: 100px;
 width: 100px;
 cursor: pointer;
+
+transition-property: width;
+}
+
+.category-card img:hover{
+    width: 130px;
+    height: 130px;
+    transition: .5s;
+}
+
+.category-card img:hover{
+    
 }
