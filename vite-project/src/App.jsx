@@ -5,20 +5,26 @@ import HeroSection from "./components/HeroSection/HeroSection.jsx";
 import TopCollection from "./components/Topcollection/TopCollection.jsx";
 import Categories from "./components/Catagories/Categories.jsx";
 import Byroom from "./components/Byroom/Byroom.jsx";
-import Cart from "./components/Cart/Cart.jsx";
+import Cart_comp from "./components/Cart/Cart.jsx";
 
-// مكون للصفحة الرئيسية
 const Home = () => {
   return (
     <div className="conainer">
-            <Navbar />
-
+      <Navbar />
       <HeroSection />
       <TopCollection />
       <div className="container2">
         <Categories />
       </div>
       <Byroom />
+    </div>
+  );
+};
+
+const Cart = () => {
+  return (
+    <div className="Cart-container">
+      <Cart_comp />
     </div>
   );
 };
