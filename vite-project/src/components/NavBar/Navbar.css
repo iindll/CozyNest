@@ -26,20 +26,30 @@
     margin-right: 60px;
     cursor: pointer;
     padding: 10px;
-
 }
-.nav-links p {
+.nav-links .nav-link{
     padding: 8px;
     border-radius: 10px;
+    text-decoration: none;
+
 
    
 }
-.nav-links p:hover{
-font-size: 15px;
-background-color: #c4b3a0
 
+.nav-link {
+  color: inherit;           /* يأخذ لون النص العادي */
+  text-decoration: none;    /* يزيل الخط */
 }
 
+.nav-link:visited {
+  color: inherit;           /* حتى بعد الزيارة */
+}
+
+.nav-link:hover {
+  background-color: #c4b3a0;
+  font-size: 15px;
+  text-decoration: none;
+}
 .logo{
 margin-left: 60px;
 font-size:20px ;

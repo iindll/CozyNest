@@ -24,6 +24,7 @@ const Home = () => {
 const Cart = () => {
   return (
     <div className="Cart-container">
+      <Navbar/>
       <Cart_comp />
     </div>
   );
@@ -33,8 +34,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />   {/* الصفحة الرئيسية */}
-        <Route path="/cart" element={<Cart />} /> {/* صفحة السلة */}
+        <Route path="/" element={<Home />} />   
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );
