@@ -1,0 +1,55 @@
+.Login-container{
+    background-color: rgba(235, 220, 201, 0.647);
+    min-height: 730px;
+    height: auto;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid rgba(183, 150, 114, 0.527);
+    gap: 20px;
+    width:20vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: rgba(182, 135, 103, 0.647)
+}
+
+button{
+        width: 200px;
+
+    padding: 5px 20px;
+    border:none;
+    background-color: rgba(102, 72, 52, 0.875);
+    color:#f7e9d9; 
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    
+    background-color: rgba(72, 51, 37, 0.875);
+  
+
+}
+
+.Forget{
+    text-decoration: none;
+  color: inherit;
+}

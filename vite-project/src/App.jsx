@@ -6,6 +6,8 @@ import TopCollection from "./components/Topcollection/TopCollection.jsx";
 import Categories from "./components/Catagories/Categories.jsx";
 import Byroom from "./components/Byroom/Byroom.jsx";
 import Cart_comp from "./components/Cart/Cart.jsx";
+import Login_comp from "./components/Authentication/Login.jsx"
+import Signup_comp from "./components/Authentication/SignUp.jsx"
 
 const Home = () => {
   return (
@@ -30,12 +32,33 @@ const Cart = () => {
   );
 };
 
+const Login = () =>{
+  return(
+    <div className="Login-container">
+<Login_comp/>
+    </div>
+  )
+}
+
+const Signup = () =>{
+  return(
+    <div className="Cart-container">
+      <Navbar/>
+      <Signup-comp />
+    </div>
+  )
+}
+
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />   
         <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
+
+
       </Routes>
     </Router>
   );
