@@ -8,8 +8,7 @@ const Navbar = () => {
         <p>Cozy<span>N</span>est</p>
       </div>
       <div className="nav-links">
-        {/* روابط التنقل */}
-        <Link to="/" className="nav-links">Home</Link>
+        <Link to="/" className="nav-link">Home</Link>
         <Link to="/categories" className="nav-link">Categories</Link>
         <Link to="/offers" className="nav-link">Offers</Link>
 
