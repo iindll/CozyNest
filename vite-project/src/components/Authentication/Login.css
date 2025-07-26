@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-input{
+.userInfo input{
     outline: none;
     border: none;
     padding: 10px;
@@ -30,7 +30,7 @@ input{
     background-color: rgba(182, 135, 103, 0.647)
 }
 
-button{
+.button-Login button{
         width: 200px;
 
     padding: 5px 20px;
