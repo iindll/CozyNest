@@ -1,0 +1,9 @@
+.favorites-container{
+     background-color: rgba(235, 220, 201, 0.647);
+    min-height: 730px;
+    height: auto;
+    width: auto;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}

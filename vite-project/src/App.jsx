@@ -8,7 +8,9 @@ import Byroom from "./components/Byroom/Byroom.jsx";
 import Cart_comp from "./components/Cart/Cart.jsx";
 import Login_comp from "./components/Authentication/Login.jsx"
 import Signup_comp from "./components/Authentication/SignUp.jsx"
-
+import Favorites_comp from "./components/favorites/Favorites.jsx";
+import Offers_comp from "./components/Offers/Offers.jsx";
+import CategoryPage_comp from "./components/CatagoryPage/CategoryPage.jsx";
 const Home = () => {
   return (
     <div className="conainer">
@@ -19,6 +21,15 @@ const Home = () => {
         <Categories />
       </div>
       <Byroom />
+    </div>
+  );
+};
+
+const CatagoryPage = () => {
+  return (
+    <div className="CatagoryPage-container">
+      <Navbar/>
+      <CategoryPage_comp />
     </div>
   );
 };
@@ -48,6 +59,23 @@ const Signup = () =>{
   )
 }
 
+const Favorites = () =>{
+  return(
+    <div className="favorites-container">
+      <Navbar/>
+      <Favorites_comp />
+    </div>
+  )
+}
+const Offers = () =>{
+  return(
+    <div className="Offers-container">
+      <Navbar/>
+      <Offers_comp />
+    </div>
+  )
+}
+
 
 const App = () => {
   return (
@@ -57,7 +85,9 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
-
+         <Route path="/favorites" element={<Favorites/>} />
+         <Route path="/offers" element={<Offers/>} />
+        <Route path="/categories" element={<CatagoryPage/>} />
 
       </Routes>
     </Router>

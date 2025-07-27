@@ -174,25 +174,21 @@ display: grid;
 }
 
 
-/* حجم الشريط */
 .cart-items::-webkit-scrollbar {
-  width: 5px; /* العرض */
+  width: 5px; 
 }
 
-/* خلفية المسار */
 .cart-items::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 
-/* مقبض السحب */
 .cart-items::-webkit-scrollbar-thumb {
   background: #2c2020;
   border-radius: 10px;
   transition: background 0.3s ease-in-out;
 }
 
-/* عند المرور بالماوس */
 .cart-items::-webkit-scrollbar-thumb:hover {
   background: #4a3a3a;
 }
