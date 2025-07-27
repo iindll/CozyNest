@@ -42,12 +42,12 @@ const Login = () =>{
 
 const Signup = () =>{
   return(
-    <div className="Cart-container">
-      <Navbar/>
-      <Signup-comp />
+    <div className="SignUp-container">
+      <Signup_comp />
     </div>
   )
 }
+
 
 const App = () => {
   return (

@@ -9,6 +9,8 @@
     background-color: rgba(235, 220, 201, 0.647);
     min-height: 730px;
     height: auto;
+    width: auto;
+    min-width: 1000px;
      display: flex;
     flex-direction: column;
     justify-content: center;
