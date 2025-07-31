@@ -10,7 +10,11 @@ const Cart = () => {
 
 const [cart_Items, setCartItems] = useState(CartItems)
 const [useCredit ,setuseCredit] = useState(false)
+const [paymentprocess,setPaymentprocess] = useState(false)
 const navigate = useNavigate();
+function handlepaymentprocess(value){
+  setPaymentprocess(value)
+}
 function handlePaymentMethod(value) {
   setuseCredit(value);
 }
@@ -103,10 +107,12 @@ function handleMinus(id) {
                 <p className="c2">{total}</p>
             </div>
           </div>
-          <button>Proceed to Checkout</button>
+          <button onClick={()=>handlepaymentprocess(true)}>Proceed to Checkout</button>
         </div>
       </div>
-    <div className="paymentDetailes">
+
+
+      {paymentprocess&&(<div className="paymentDetailes">
         <form >
           <div className="filed">
           <p>Full Name</p>
@@ -157,7 +163,8 @@ function handleMinus(id) {
         }} className="checkout-btn">Place Order</button>
 
         </form>
-      </div>
+      </div>)}
+    
     </div>
 
   );
