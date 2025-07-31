@@ -1,0 +1,44 @@
+.Payment img{
+    width: 80px;
+    height: 80px;
+position: relative;
+
+}
+.payment-conainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+background-color: rgba(139, 69, 19, 0.082);
+}
+
+.Payment{
+    padding: 30px;
+    background-color: rgba(57, 36, 11, 0.503);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+background-color: rgba(123, 62, 19, 0.207)
+}
+
+.Payment button{
+    margin-top: 10px;
+    border: none
+    ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Payment p{
+    margin-top: -5px;
+    opacity: 0.7;
+    font-size: 15px;
+}

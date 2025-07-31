@@ -153,7 +153,7 @@ function handleMinus(id) {
   </div>
 )}
         <button onClick={()=> {
-          navigate('../home') 
+          navigate('../successPayment') 
         }} className="checkout-btn">Place Order</button>
 
         </form>

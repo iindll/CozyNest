@@ -11,6 +11,7 @@ import Signup_comp from "./components/Authentication/SignUp.jsx"
 import Favorites_comp from "./components/favorites/Favorites.jsx";
 import Offers_comp from "./components/Offers/Offers.jsx";
 import CategoryPage_comp from "./components/CatagoryPage/CategoryPage.jsx";
+import Payment_comp from "./components/payment-success/payment.jsx";
 const Home = () => {
   return (
     <div className="conainer">
@@ -76,6 +77,14 @@ const Offers = () =>{
   )
 }
 
+const Payment = ()=>{
+  return(
+    <div className="payment-conainer">
+      <Payment_comp></Payment_comp>
+    </div>
+  )
+}
+
 
 const App = () => {
   return (
@@ -88,6 +97,8 @@ const App = () => {
          <Route path="/favorites" element={<Favorites/>} />
          <Route path="/offers" element={<Offers/>} />
         <Route path="/categories" element={<CatagoryPage/>} />
+        <Route path="/successPayment" element={<Payment/>} />
+
 
       </Routes>
     </Router>
