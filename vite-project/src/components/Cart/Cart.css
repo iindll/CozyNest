@@ -10,6 +10,8 @@
     display: flex;
     min-height: 100vh;
     height: auto;
+    min-width: 100vw;
+    width: auto;
 }
 
 .first-section{
@@ -30,7 +32,8 @@ margin-top: 50px;
     border-radius: 10px;
     align-items: center;
     height: 50vh;
-    width: 20vw;
+    min-width: 20vw;
+    width: auto;
 }
 .second-section h3{
     text-align: center;
@@ -171,6 +174,7 @@ display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
   align-items: center; 
   padding: 10px 20px ;
+
 }
 
 

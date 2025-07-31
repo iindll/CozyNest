@@ -1,49 +1,11 @@
-import img1 from "../../assets/Bed.jpeg";
 import "./Cart.css"
-const cart = [
-  {
-    id: 1,
-    name: "Chair",
-    quantity: 0,
-    price: 100,
-    total: 0,
-    img: img1,
-  },
-   {
-    id: 1,
-    name: "Chair",
-    quantity: 0,
-    price: 100,
-    total: 0,
-    img: img1,
-  },
-   {
-    id: 1,
-    name: "Chair",
-    quantity: 0,
-    price: 100,
-    total: 0,
-    img: img1,
-  },
-  {
-    id: 2,
-    name: "Chair",
-    quantity: 0,
-    price: 100,
-    total: 0,
-    img: img1,
-  },
-  {
-    id: 3,
-    name: "Chair",
-    quantity: 0,
-    price: 100,
-    total: 0,
-    img: img1,
-  },
-];
-
+import Data from "../../Data/proudcts";
+import CartItems from"./Cart.js"
 const Cart = () => {
+
+  function handleDelete(id){
+   console.log(id)
+  }
   return (
     <div className="Cart">
       <div className="cart-container">
@@ -57,7 +19,7 @@ const Cart = () => {
               <span className="item-total">Total</span>
             </div>
             {
-              cart.map((item) => (
+              CartItems.map((item) => (
                 <div className="item-card" key={item.id}>
                   <img src={item.img} alt={item.name} />
                   <p className="price">{item.price} EGP</p>
@@ -71,7 +33,7 @@ const Cart = () => {
                     </div>
                   </div>
                    <span className="total">{item.total}</span>
-                   <button className="DeleteItem">Delete</button>
+                   <button onClick={()=>handleDelete(item.id)} className="DeleteItem">Delete</button>
 
                 </div>
               ))
