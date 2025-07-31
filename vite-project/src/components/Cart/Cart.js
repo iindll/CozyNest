@@ -11,7 +11,7 @@ let CartItems = [
     name: "Modern Chair",
     price: 120,
     img: image1,
-    quantity: 2,
+    quantity: 1,
     totalPrice: 240
   },
   {
