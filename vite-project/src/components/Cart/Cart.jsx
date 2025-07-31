@@ -1,11 +1,16 @@
 import "./Cart.css"
 import Data from "../../Data/proudcts";
 import CartItems from"./Cart.js"
-const Cart = () => {
+import { useState } from "react";
 
-  function handleDelete(id){
-   console.log(id)
+const Cart = () => {
+const [cart_Items, setCartItems] = useState(CartItems)
+
+  function handleDelete(id) {
+    const updatedCart = cart_Items.filter(item => item.id !== id);
+    setCartItems(updatedCart);
   }
+
   return (
     <div className="Cart">
       <div className="cart-container">
@@ -18,8 +23,9 @@ const Cart = () => {
               <span className="item-quantity">Quantity</span>
               <span className="item-total">Total</span>
             </div>
+            
             {
-              CartItems.map((item) => (
+              cart_Items.map((item) => (
                 <div className="item-card" key={item.id}>
                   <img src={item.img} alt={item.name} />
                   <p className="price">{item.price} EGP</p>
@@ -34,8 +40,8 @@ const Cart = () => {
                   </div>
                    <span className="total">{item.total}</span>
                    <button onClick={()=>handleDelete(item.id)} className="DeleteItem">Delete</button>
-
                 </div>
+                
               ))
             }
           </div>
