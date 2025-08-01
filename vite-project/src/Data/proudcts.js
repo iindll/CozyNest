@@ -9,7 +9,7 @@ import image8 from "./images/light2 (1).jpg";
 import image9 from "./images/sofa (1).jpg";
 import image10 from "./images/light2 (1).jpg";
 
-const Data = [
+export const Data = [
   { 
     id: 1, 
     name: "Modern Chair", 
