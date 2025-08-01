@@ -11,7 +11,7 @@ const Payment = () => {
         <p>your payment was completed successfuly,
             Thank you for your purchase</p>
         <button on onClick={()=>{
-            navigate('../home')
+            navigate('../')
         }}>Go to Home?</button>
     </div>
   )
